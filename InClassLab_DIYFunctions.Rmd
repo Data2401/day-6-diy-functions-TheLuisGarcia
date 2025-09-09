@@ -76,7 +76,21 @@ num_abs(-7)
    
 ```{r}
 
-
+num_abs <- function(num){
+  if (is.character(num)){
+    print("Please pass a numerical value to this function")
+  }
+  else if (num>0){
+    print(num)
+    }
+  else if (num==0){
+    print(0)}
+  else {
+    print(num*-1)
+  }
+  
+}
+num_abs('10')
 
 ```
    
